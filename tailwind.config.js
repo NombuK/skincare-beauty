@@ -12,7 +12,14 @@ export default {
         nova: "Bona Nova SC",
         algeria: "Alegreya Sans",
       },
+      colors: {
+        lightBrown: "#ede0d4",
+        mildBrown: "#e6ccb2",
+        brown: "#ddb892",
+        darkBrown: "#b08968",
+      },
+      backdropFilter: ["responsive", "hover", "focus"],
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-filters")],
 };
