@@ -12,6 +12,11 @@ export default {
         nova: "Bona Nova SC",
         algeria: "Alegreya Sans",
       },
+      backgroundImage: {
+        whiteContact: "public/images/whitecontactBackground.jpg",
+        blackContact: "public/images/blackcontactBackground.jpg",
+        gold: "rgb(227, 192, 98)",
+      },
       colors: {
         lightBrown: "#ede0d4",
         mildBrown: "#e6ccb2",
