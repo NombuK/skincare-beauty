@@ -1,8 +1,10 @@
+import "animate.css";
 import Header from "./component/Header";
 import About from "./component/About";
 import Products from "./component/Products";
 import Review from "./component/Review";
-import Contact from "./component/Contact"
+import Contact from "./component/Contact";
+import Footer from "./component/Footer";
 import React from "react";
 
 function App() {
@@ -11,8 +13,9 @@ function App() {
       <Header />
       <About />
       <Products />
-      <Review/>
-      <Contact/>
+      <Review />
+      <Contact />
+      <Footer />
     </>
   );
 }

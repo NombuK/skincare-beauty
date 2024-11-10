@@ -257,11 +257,10 @@ export default function Products() {
     <div id="product" className="py-6 bg-lightBrown">
       <div className="container mx-auto text-center">
         <div className="max-w-md mx-auto">
-          <h2 className="text-3xl font-bold mb-4">Best Selling Products</h2>
+          <h2 className="text-3xl font-bold mb-4 font-nova text-darkerBrown">Best Selling Products</h2>
           <div className="border-t-2 border-brown w-12 mx-auto mb-8"></div>
-          <p className="text-lg mb-8">
-            Treat yourself to a culinary journey, exploring bold flavors and
-            timeless classics
+          <p className="text-lg mb-8 text-darkBrown">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit doloribus eaque nisi debitis! Neque in debitis error nobis sequi cupiditate impedit facere repellendus, nam explicabo odit numquam praesentium sapiente soluta.
           </p>
 
           <div className=" mb-10">

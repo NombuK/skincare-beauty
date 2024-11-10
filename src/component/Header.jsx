@@ -17,7 +17,7 @@ export default function Header() {
   return (
     <div className="fixed top-0 left-0 w-full z-50 backdrop-blur-md shadow-lg bg-opacity-50">
       <nav className="container relative h-14 flex justify-between items-center">
-        <div className="text-2xl uppercase font-nova text-lightBrown">
+        <div className="text-2xl uppercase font-nova text-darkerBrown">
           SKIN<span className="text-darkBrown">CARE</span>
         </div>
 
