@@ -32,13 +32,18 @@ export default function Header() {
     };
   }, []);
 
+  const headerStyle = {
+    width: scrolled ? "75%" : "100%",
+    transition: "width 0.3s ease-in-out",
+    transform: scrolled ? "translateX(-50%)" : "none",
+    left: scrolled ? "50%" : "0",
+    borderRadius: scrolled ? "1.5rem" : "0",
+  };
+
   return (
     <div
-      className={`fixed top-0 left-0 w-full z-50 backdrop-blur-md shadow-lg bg-opacity-50 transition-all duration-300 ${
-        scrolled
-          ? "w-3/4 rounded-3xl left-[50%] transform -translate-x-[50%]"
-          : "w-full left-0"
-      }`}
+      className="fixed top-0 left-0 z-50 backdrop-blur-md shadow-lg bg-opacity-50"
+      style={headerStyle}
     >
       <nav className="container relative h-14 flex justify-between items-center">
         <div className="text-2xl uppercase font-nova text-darkerBrown">
