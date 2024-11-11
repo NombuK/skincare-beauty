@@ -10,7 +10,7 @@ export default function About() {
       >
         <div className="w-full flex justify-center ">
           <img
-            src="public/images/combo4.jpg"
+            src="/images/combo4.jpg"
             alt=""
             className="w-1/2 md:1/2 md:h-3/4 md:ml-[200px] rounded-md ml-5 items-center text-center justify-center mt-10 "
           />
