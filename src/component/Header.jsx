@@ -1,21 +1,45 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 export default function Header() {
   const [menuVisible, setMenuVisible] = useState(false);
   const [darkTheme, setDarkTheme] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   const toggleMenu = () => {
     setMenuVisible((prevState) => !prevState);
   };
+
   const closeMenu = () => {
     setMenuVisible(false);
   };
+
   const toggleTheme = () => {
     setDarkTheme((prevState) => !prevState);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div className="fixed top-0 left-0 w-full z-50 backdrop-blur-md shadow-lg bg-opacity-50">
+    <div
+      className={`fixed top-0 left-0 w-full z-50 backdrop-blur-md shadow-lg bg-opacity-50 transition-all duration-300 ${
+        scrolled
+          ? "w-3/4 rounded-3xl left-[50%] transform -translate-x-[50%]"
+          : "w-full left-0"
+      }`}
+    >
       <nav className="container relative h-14 flex justify-between items-center">
         <div className="text-2xl uppercase font-nova text-darkerBrown">
           SKIN<span className="text-darkBrown">CARE</span>
@@ -25,7 +49,7 @@ export default function Header() {
 
         <div className="flex items-center gap-5 left-0 top-0 ">
           <i
-            className={`cursor-pointer ml-4 text-xl ${
+            className={`cursor-pointer ml-4 text-xl mr-4 ${
               darkTheme ? "text-yellow-400" : "text-darkBrown"
             }`}
             onClick={toggleTheme}
@@ -96,7 +120,7 @@ export default function Header() {
               </li>
             </ul>
             <div
-              className="absolute  top-[0rem] right-4 text-3xl cursor-pointer z-50 md:hidden"
+              className="absolute top-[0rem] right-4 text-3xl cursor-pointer z-50 md:hidden"
               onClick={toggleMenu}
             >
               <i className="ri-close-line"></i>

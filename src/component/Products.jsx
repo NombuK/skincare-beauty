@@ -254,13 +254,18 @@ export default function Products() {
   };
 
   return (
-    <div id="product" className="py-6 bg-lightBrown">
+    <div id="products" className="py-6 bg-lightBrown">
       <div className="container mx-auto text-center">
         <div className="max-w-md mx-auto">
-          <h2 className="text-3xl font-bold mb-4 font-nova text-darkerBrown">Best Selling Products</h2>
+          <h2 className="text-3xl font-bold mb-4 font-nova text-darkerBrown">
+            Best Selling Products
+          </h2>
           <div className="border-t-2 border-brown w-12 mx-auto mb-8"></div>
           <p className="text-lg mb-8 text-darkBrown">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit doloribus eaque nisi debitis! Neque in debitis error nobis sequi cupiditate impedit facere repellendus, nam explicabo odit numquam praesentium sapiente soluta.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit
+            doloribus eaque nisi debitis! Neque in debitis error nobis sequi
+            cupiditate impedit facere repellendus, nam explicabo odit numquam
+            praesentium sapiente soluta.
           </p>
 
           <div className=" mb-10">
@@ -290,8 +295,7 @@ export default function Products() {
                 ref={(el) => (productItemsRef.current[item.title] = el)}
                 className="item-wrap product-item"
               >
-                <div 
-                className="h-56 grid place-items-center bg-brown rounded-3xl hover:bg-darkerBrown dark:transition-shadow dark:hover:shadow-2xl hover:shadow-gold dark:bg-gold sm:rounded-full sm:p-5 transition duration-200 ease-in-out">
+                <div className="h-56 grid place-items-center bg-brown rounded-3xl hover:bg-darkerBrown dark:transition-shadow dark:hover:shadow-2xl hover:shadow-gold dark:bg-gold sm:rounded-full sm:p-5 transition duration-200 ease-in-out">
                   <img
                     src={item.imgSrc}
                     alt={item.title}

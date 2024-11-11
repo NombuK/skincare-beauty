@@ -4,7 +4,10 @@ import AnimatedSection from "./AnimatedSection";
 export default function About() {
   return (
     <AnimatedSection animationClass="animate__slideInFromLeft">
-      <div className="flex flex-col md:flex-row gap-0 mt-10 bg-lightBrown h-full md:-mr-7">
+      <div
+        id="about"
+        className="flex flex-col md:flex-row gap-0 mt-10 bg-lightBrown h-full md:-mr-7"
+      >
         <div className="w-full flex justify-center ">
           <img
             src="public/images/combo4.jpg"

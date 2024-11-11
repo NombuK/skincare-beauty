@@ -4,7 +4,7 @@ import AnimatedSection from "./AnimatedSection";
 export default function Contact() {
   return (
     <AnimatedSection animationClass="animate__slideInFromLeft">
-      <div>
+      <div id="contact">
         <section className="bg-lightBrown py-16 text-black">
           <div className="container flex flex-col gap-5 md:items-center md:flex-row">
             <div className="space-y-4 md:flex-1">

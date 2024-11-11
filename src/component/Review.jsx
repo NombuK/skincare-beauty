@@ -11,7 +11,7 @@ import AnimatedSection from "./AnimatedSection";
 export default function Review() {
   return (
     <AnimatedSection animationClass="animate__slideInFromRight">
-      <section className="bg-brown py-20">
+      <section id="review" className="bg-brown py-20">
         <div className="container">
           <div className="mx-w-md mx-auto text-center">
             <h2 className="text-4xl text-darkerBrown font-nova font-bold uppercase lg:text-6xl">
