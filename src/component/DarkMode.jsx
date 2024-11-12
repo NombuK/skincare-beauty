@@ -6,11 +6,9 @@ export default function DarkMode() {
   const [dark, setDark] = useState(false);
 
   useEffect(() => {
-    // Check localStorage for dark mode preference
     const savedDarkMode = localStorage.getItem("darkMode") === "true";
     setDark(savedDarkMode);
 
-    // Apply dark class to document root element
     if (savedDarkMode) {
       document.documentElement.classList.add("dark");
     } else {
@@ -22,7 +20,6 @@ export default function DarkMode() {
     const newDarkMode = !dark;
     setDark(newDarkMode);
 
-    // Store dark mode preference in localStorage
     localStorage.setItem("darkMode", newDarkMode);
 
     if (newDarkMode) {
@@ -35,9 +32,9 @@ export default function DarkMode() {
   return (
     <div className="pointer-cursor mx-4" onClick={toggleDarkMode}>
       {dark ? (
-        <Sun className="w-6 h-6 text-yellow-400" />
+        <Sun className="w-6 h-6 text-yellow-400 cursor-pointer" />
       ) : (
-        <Moon className="w-5 h-5 text-black" />
+        <Moon className="w-5 h-5 text-black cursor-pointer" />
       )}
     </div>
   );

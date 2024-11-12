@@ -29,6 +29,7 @@ export default {
         gold: "rgb(227, 192, 98)",
         darkerGold: "#bb9457",
         mildBlack: "#171717",
+        glowingGold: "#f1c251",
       },
       container: {
         center: true,

@@ -58,7 +58,7 @@ export default function Header() {
         <div
           className={`${
             menuVisible ? "block" : "hidden"
-          } fixed top-0 left-0 z-40 w-full py-14 bg-lightBrown border-b border-darkBrown md:block md:static md:py-0 md:border-none md:w-auto md:ml-auto md:bg-transparent`}
+          } fixed top-0 left-0 z-40 w-full py-14 bg-lightBrown dark:bg-black border-b border-darkBrown md:block md:static md:py-0 md:border-none md:w-auto md:ml-auto md:bg-transparent`}
         >
           <div className="relative w-full h-full">
             <ul className="flex flex-col w-full h-full text-lg text-center gap-5 md:flex-row">
@@ -112,7 +112,7 @@ export default function Header() {
               className="absolute top-[0rem] right-4 text-3xl cursor-pointer z-50 md:hidden"
               onClick={toggleMenu}
             >
-              <i className="ri-close-line"></i>
+              <i className="ri-close-line dark:text-white text-darkBrown cursor-pointer"></i>
             </div>
           </div>
         </div>

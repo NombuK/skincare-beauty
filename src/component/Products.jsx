@@ -295,7 +295,7 @@ export default function Products() {
                 ref={(el) => (productItemsRef.current[item.title] = el)}
                 className="item-wrap product-item"
               >
-                <div className="h-56 grid place-items-center bg-brown rounded-3xl hover:bg-darkerBrown dark:transition-shadow dark:hover:shadow-2xl hover:shadow-gold dark:bg-gold sm:rounded-full sm:p-5 transition duration-200 ease-in-out">
+                <div className="h-56 grid place-items-center bg-brown rounded-3xl hover:bg-darkerBrown hover:shadow-gold dark:glowingGold sm:p-5 transition duration-200 ease-in-out">
                   <img
                     src={item.imgSrc}
                     alt={item.title}
