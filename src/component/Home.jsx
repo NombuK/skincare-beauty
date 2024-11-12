@@ -5,15 +5,15 @@ export default function Home() {
         <img
           src="/images/combo4.jpg"
           alt="background white"
-          className="flex-1 opacity-10 object-cover dark:hidden"
+          className="flex-1 opacity-50 md:opacity-10 object-cover dark:hidden"
         />
         <img
           src="/images/combo10.jpg"
           alt="background black"
-          className="flex-1 opacity-10 object-cover hidden dark:block"
+          className="flex-1 opacity-30 md:opacity-10 object-cover hidden dark:block"
         />
         <div className="absolute top-1/3 left-1/3 transform -translate-x-1/2 -translate-y-1/2 z-10">
-          <h1 className="text-gold text-4xl font-bold font-nova text-start uppercase w-3/4 ml-7">
+          <h1 className="text-gold text-4xl font-bold font-nova text-start uppercase w-3/4 ml-7 mt-7">
             From Our Skin to Yours <br /> — <br />
             Unlock the Secret to Healthy, Glowing Skin.
           </h1>
