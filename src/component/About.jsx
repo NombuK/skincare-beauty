@@ -25,7 +25,7 @@ export default function About() {
             Radiance begins with self-care
           </h1>
           <p className="text-darkBrown dark:text-darkerGold font-algeria text-lg  w-2/3 mx-auto mb-10 md:justify-start md:text-xl">
-            Our mission is simple: to empower you to feel confident in your own
+            Our mission is simple: <br /> To empower you to feel confident in your own
             skin. We believe that skincare is more than just a routine; it's a
             moment of self-love and self-care. With every product, we aim to
             nourish, rejuvenate, and reveal your skin’s natural beauty, helping

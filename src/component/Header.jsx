@@ -42,8 +42,8 @@ export default function Header() {
       style={headerStyle}
     >
       <nav className="container relative h-14 flex justify-between items-center">
-        <div className="text-2xl uppercase font-nova text-darkerBrown">
-          SKIN<span className="text-darkBrown">CARE</span>
+        <div className="text-2xl uppercase font-nova text-darkerBrown dark:text-gold">
+          SKIN<span className="text-darkBrown dark:text-darkerGold">CARE</span>
         </div>
 
         <div className="flex-1"></div>

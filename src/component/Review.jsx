@@ -30,7 +30,7 @@ export default function Review() {
               navigation={false}
               pagination={{ clickable: true }}
               loop
-              autoplay={{ delay: 3000, disableOnInteraction: false }}
+              autoplay={{ delay: 4000, disableOnInteraction: false }}
               breakpoints={{
                 640: { slidesPerView: 1 },
                 768: { slidesPerView: 2 },
@@ -40,10 +40,10 @@ export default function Review() {
               <SwiperSlide>
                 <div className="flex flex-col gap-5 bg-lightBrown dark:bg-black rounded-lg p-6">
                   <p className="text-darkBrown dark:text-gold">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Unde doloribus totam, amet ipsum fugiat eos molestias
-                    suscipit impedit corporis, nobis eum laudantium minus dolor
-                    harum ratione inventore sint, recusandae quis.
+                    I've tried countless skincare products over the years, but
+                    nothing has worked as well as this one. My skin feels
+                    smoother, looks brighter, and the fine lines around my eyes
+                    are less noticeable. I’m officially hooked!
                   </p>
                   <div className="flex items-center">
                     <img
@@ -51,8 +51,10 @@ export default function Review() {
                       alt="review"
                       className="w-12 h-12 rounded-full"
                     />
-                    <div className="ml-2">
-                      <p className="font-algeria uppercase">Sarah Brown</p>
+                    <div className="ml-2 dark:text-white">
+                      <p className="font-algeria uppercase dark:text-white">
+                        Emily Thompson
+                      </p>
                     </div>
                     <i className="fa-solid fa-quote-right text-4xl text-darkerBrown dark:text-gold ml-auto"></i>
                   </div>
@@ -61,10 +63,10 @@ export default function Review() {
               <SwiperSlide>
                 <div className="flex flex-col gap-5 bg-lightBrown dark:bg-black rounded-lg p-6">
                   <p className="text-darkBrown dark:text-gold">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Unde doloribus totam, amet ipsum fugiat eos molestias
-                    suscipit impedit corporis, nobis eum laudantium minus dolor
-                    harum ratione inventore sint, recusandae quis.
+                    After using this skincare line for just a few weeks, I
+                    noticed a huge difference. My skin is clearer and feels more
+                    hydrated, and the redness I used to struggle with has
+                    diminished significantly. Highly recommend!
                   </p>
                   <div className="flex items-center">
                     <img
@@ -72,8 +74,8 @@ export default function Review() {
                       alt="review"
                       className="w-12 h-12 rounded-full"
                     />
-                    <div className="ml-2">
-                      <p className="font-algeria uppercase">Sarah Brown</p>
+                    <div className="ml-2 dark:text-white">
+                      <p className="font-algeria uppercase">Mandy Delgado</p>
                     </div>
                     <i className="fa-solid fa-quote-right text-4xl text-darkerBrown dark:text-gold ml-auto"></i>
                   </div>
@@ -82,10 +84,10 @@ export default function Review() {
               <SwiperSlide>
                 <div className="flex flex-col gap-5 bg-lightBrown dark:bg-black rounded-lg p-6">
                   <p className="text-darkBrown dark:text-gold">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Unde doloribus totam, amet ipsum fugiat eos molestias
-                    suscipit impedit corporis, nobis eum laudantium minus dolor
-                    harum ratione inventore sint, recusandae quis.
+                    This product is a game-changer! My skin has never been this
+                    soft, and the texture has improved so much. I’ve been
+                    getting compliments non-stop about how radiant my complexion
+                    looks!
                   </p>
                   <div className="flex items-center">
                     <img
@@ -93,8 +95,8 @@ export default function Review() {
                       alt="review"
                       className="w-12 h-12 rounded-full"
                     />
-                    <div className="ml-2">
-                      <p className="font-algeria uppercase">Sarah Brown</p>
+                    <div className="ml-2 dark:text-white">
+                      <p className="font-algeria uppercase">Claire Robinson</p>
                     </div>
                     <i className="fa-solid fa-quote-right text-4xl text-darkerBrown dark:text-gold ml-auto"></i>
                   </div>
@@ -103,10 +105,11 @@ export default function Review() {
               <SwiperSlide>
                 <div className="flex flex-col gap-5 bg-lightBrown dark:bg-black rounded-lg p-6">
                   <p className="text-darkBrown dark:text-gold">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Unde doloribus totam, amet ipsum fugiat eos molestias
-                    suscipit impedit corporis, nobis eum laudantium minus dolor
-                    harum ratione inventore sint, recusandae quis.
+                    I was skeptical at first, but after using this skincare
+                    cream for a month, I can say it’s one of the best
+                    investments I’ve made. My skin feels revitalized, and the
+                    dark spots I had are fading away. Definitely a must-have in
+                    my routine.
                   </p>
                   <div className="flex items-center">
                     <img
@@ -114,8 +117,8 @@ export default function Review() {
                       alt="review"
                       className="w-12 h-12 rounded-full"
                     />
-                    <div className="ml-2">
-                      <p className="font-algeria uppercase">Sarah Brown</p>
+                    <div className="ml-2 dark:text-white">
+                      <p className="font-algeria uppercase">Jacky Miller</p>
                     </div>
                     <i className="fa-solid fa-quote-right text-4xl text-darkerBrown dark:text-gold ml-auto"></i>
                   </div>
@@ -124,10 +127,10 @@ export default function Review() {
               <SwiperSlide>
                 <div className="flex flex-col gap-5 bg-lightBrown dark:bg-black rounded-lg p-6">
                   <p className="text-darkBrown dark:text-gold">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Unde doloribus totam, amet ipsum fugiat eos molestias
-                    suscipit impedit corporis, nobis eum laudantium minus dolor
-                    harum ratione inventore sint, recusandae quis.
+                    I love how this product balances hydration without making my
+                    skin feel greasy. It's perfect for my sensitive skin, and
+                    I've noticed fewer breakouts and much smoother skin overall.
+                    It’s now an essential part of my daily routine!
                   </p>
                   <div className="flex items-center">
                     <img
@@ -135,8 +138,8 @@ export default function Review() {
                       alt="review"
                       className="w-12 h-12 rounded-full"
                     />
-                    <div className="ml-2">
-                      <p className="font-algeria uppercase">Sarah Brown</p>
+                    <div className="ml-2 dark:text-white">
+                      <p className="font-algeria uppercase">Sophie Kim</p>
                     </div>
                     <i className="fa-solid fa-quote-right text-4xl text-darkerBrown dark:text-gold ml-auto"></i>
                   </div>

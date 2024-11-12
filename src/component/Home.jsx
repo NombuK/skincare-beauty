@@ -5,7 +5,7 @@ export default function Home() {
         <img
           src="/images/combo4.jpg"
           alt="background white"
-          className="flex-1 opacity-50 md:opacity-10 object-cover dark:hidden"
+          className="flex-1 opacity-50 md:opacity-30 object-cover dark:hidden"
         />
         <img
           src="/images/combo10.jpg"
