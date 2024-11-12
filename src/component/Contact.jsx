@@ -5,13 +5,13 @@ export default function Contact() {
   return (
     <AnimatedSection animationClass="animate__slideInFromLeft">
       <div id="contact">
-        <section className="bg-lightBrown py-16 text-black">
+        <section className="bg-lightBrown dark:bg-mildBlack py-16 text-black">
           <div className="container flex flex-col gap-5 md:items-center md:flex-row">
             <div className="space-y-4 md:flex-1">
-              <h2 className="text-4xl font-nova font-bold uppercase lg:text-5xl text-darkerBrown">
+              <h2 className="text-4xl font-nova font-bold uppercase lg:text-5xl text-darkerBrown dark:text-gold">
                 GET EXCLUSIVE UPDATE
               </h2>
-              <p className="text-darkBrown">
+              <p className="text-darkBrown dark:text-darkerGold">
                 Unlock exclusive offers, early access to new products, and
                 special discounts. Subscribe now and start enjoying the perks!
               </p>
@@ -25,7 +25,7 @@ export default function Contact() {
               />
               <a
                 href=""
-                className="flex items-center justify-center p-3 rounded-2xl gap-2 btn bg-darkBrown hover:opacity-75"
+                className="flex items-center justify-center p-3 rounded-2xl gap-2 btn bg-darkBrown dark:bg-gold hover:opacity-75"
               >
                 <i className="fa-solid fa-paper-plane"></i>
                 Subscribe

@@ -11,13 +11,13 @@ import AnimatedSection from "./AnimatedSection";
 export default function Review() {
   return (
     <AnimatedSection animationClass="animate__slideInFromRight">
-      <section id="review" className="bg-brown py-20">
+      <section id="review" className="bg-brown py-20 dark:bg-gold">
         <div className="container">
           <div className="mx-w-md mx-auto text-center">
-            <h2 className="text-4xl text-darkerBrown font-nova font-bold uppercase lg:text-6xl">
+            <h2 className="text-4xl text-darkerBrown dark:text-black dark:font-bold font-nova font-bold uppercase lg:text-6xl">
               CUSTOMER REVIEW
             </h2>
-            <p className="text-darkBrown mb-4">
+            <p className="text-darkBrown dark:text-mildBlack mb-4">
               Find Out What Out Valued Customers Think
             </p>
           </div>
@@ -38,8 +38,8 @@ export default function Review() {
               }}
             >
               <SwiperSlide>
-                <div className="flex flex-col gap-5 bg-lightBrown rounded-lg p-6">
-                  <p className="text-darkBrown">
+                <div className="flex flex-col gap-5 bg-lightBrown dark:bg-black rounded-lg p-6">
+                  <p className="text-darkBrown dark:text-gold">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Unde doloribus totam, amet ipsum fugiat eos molestias
                     suscipit impedit corporis, nobis eum laudantium minus dolor
@@ -54,13 +54,13 @@ export default function Review() {
                     <div className="ml-2">
                       <p className="font-algeria uppercase">Sarah Brown</p>
                     </div>
-                    <i className="fa-solid fa-quote-right text-4xl text-darkerBrown ml-auto"></i>
+                    <i className="fa-solid fa-quote-right text-4xl text-darkerBrown dark:text-gold ml-auto"></i>
                   </div>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className="flex flex-col gap-5 bg-lightBrown rounded-lg p-6">
-                  <p className="text-darkBrown">
+                <div className="flex flex-col gap-5 bg-lightBrown dark:bg-black rounded-lg p-6">
+                  <p className="text-darkBrown dark:text-gold">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Unde doloribus totam, amet ipsum fugiat eos molestias
                     suscipit impedit corporis, nobis eum laudantium minus dolor
@@ -75,13 +75,13 @@ export default function Review() {
                     <div className="ml-2">
                       <p className="font-algeria uppercase">Sarah Brown</p>
                     </div>
-                    <i className="fa-solid fa-quote-right text-4xl text-darkerBrown ml-auto"></i>
+                    <i className="fa-solid fa-quote-right text-4xl text-darkerBrown dark:text-gold ml-auto"></i>
                   </div>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className="flex flex-col gap-5 bg-lightBrown rounded-lg p-6">
-                  <p className="text-darkBrown">
+                <div className="flex flex-col gap-5 bg-lightBrown dark:bg-black rounded-lg p-6">
+                  <p className="text-darkBrown dark:text-gold">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Unde doloribus totam, amet ipsum fugiat eos molestias
                     suscipit impedit corporis, nobis eum laudantium minus dolor
@@ -96,13 +96,13 @@ export default function Review() {
                     <div className="ml-2">
                       <p className="font-algeria uppercase">Sarah Brown</p>
                     </div>
-                    <i className="fa-solid fa-quote-right text-4xl text-darkerBrown ml-auto"></i>
+                    <i className="fa-solid fa-quote-right text-4xl text-darkerBrown dark:text-gold ml-auto"></i>
                   </div>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className="flex flex-col gap-5 bg-lightBrown rounded-lg p-6">
-                  <p className="text-darkBrown">
+                <div className="flex flex-col gap-5 bg-lightBrown dark:bg-black rounded-lg p-6">
+                  <p className="text-darkBrown dark:text-gold">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Unde doloribus totam, amet ipsum fugiat eos molestias
                     suscipit impedit corporis, nobis eum laudantium minus dolor
@@ -117,13 +117,13 @@ export default function Review() {
                     <div className="ml-2">
                       <p className="font-algeria uppercase">Sarah Brown</p>
                     </div>
-                    <i className="fa-solid fa-quote-right text-4xl text-darkerBrown ml-auto"></i>
+                    <i className="fa-solid fa-quote-right text-4xl text-darkerBrown dark:text-gold ml-auto"></i>
                   </div>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className="flex flex-col gap-5 bg-lightBrown rounded-lg p-6">
-                  <p className="text-darkBrown">
+                <div className="flex flex-col gap-5 bg-lightBrown dark:bg-black rounded-lg p-6">
+                  <p className="text-darkBrown dark:text-gold">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Unde doloribus totam, amet ipsum fugiat eos molestias
                     suscipit impedit corporis, nobis eum laudantium minus dolor
@@ -138,7 +138,7 @@ export default function Review() {
                     <div className="ml-2">
                       <p className="font-algeria uppercase">Sarah Brown</p>
                     </div>
-                    <i className="fa-solid fa-quote-right text-4xl text-darkerBrown ml-auto"></i>
+                    <i className="fa-solid fa-quote-right text-4xl text-darkerBrown dark:text-gold ml-auto"></i>
                   </div>
                 </div>
               </SwiperSlide>

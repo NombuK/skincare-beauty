@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
-  darkMode : "class",
+  darkMode: "class",
   theme: {
     screens: {
       sm: "480px",
@@ -26,6 +26,9 @@ export default {
         brown: "#ddb892",
         darkBrown: "#b08968",
         darkerBrown: "#774936",
+        gold: "rgb(227, 192, 98)",
+        darkerGold: "#bb9457",
+        mildBlack: "#171717",
       },
       container: {
         center: true,
@@ -34,7 +37,7 @@ export default {
           sm: "1.5rem",
         },
       },
-      
+
       backdropFilter: ["responsive", "hover", "focus"],
     },
   },

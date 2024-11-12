@@ -254,14 +254,14 @@ export default function Products() {
   };
 
   return (
-    <div id="products" className="py-6 bg-lightBrown">
+    <div id="products" className="py-6 bg-lightBrown dark:bg-black text-white">
       <div className="container mx-auto text-center">
         <div className="max-w-md mx-auto">
-          <h2 className="text-3xl font-bold mb-4 font-nova text-darkerBrown">
+          <h2 className="text-3xl font-bold mb-4 font-nova text-darkerBrown dark:text-gold">
             Best Selling Products
           </h2>
           <div className="border-t-2 border-brown w-12 mx-auto mb-8"></div>
-          <p className="text-lg mb-8 text-darkBrown">
+          <p className="text-lg mb-8 text-darkBrown dark:text-darkerGold">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit
             doloribus eaque nisi debitis! Neque in debitis error nobis sequi
             cupiditate impedit facere repellendus, nam explicabo odit numquam
@@ -276,8 +276,8 @@ export default function Products() {
                   onClick={() => setActiveTab(tab)}
                   className={`cursor-pointer px-6 py-2 rounded-full ${
                     activeTab === tab
-                      ? "bg-brown text-darkBrown"
-                      : "bg-gray-200 text-gray-700"
+                      ? "bg-brown text-darkBrown dark:bg-gold dark:text-black dark:font-bold"
+                      : "bg-gray-200 text-gray-700 dark:font-bold"
                   }`}
                 >
                   {tab.charAt(0).toUpperCase() + tab.slice(1)}
@@ -305,11 +305,15 @@ export default function Products() {
 
                 <div className="pt-5 text-center">
                   <div className="mb-2">
-                    <h4 className="font-semibold text-lg">{item.title}</h4>
+                    <h4 className="font-semibold text-lg text-black dark:text-white">
+                      {item.title}
+                    </h4>
                     <p className="text-sm text-gray-500">Product Use</p>
                   </div>
 
-                  <p className="text-brown text-lg">${item.price.toFixed(2)}</p>
+                  <p className="text-brown text-lg dark:text-darkerGold">
+                    ${item.price.toFixed(2)}
+                  </p>
                 </div>
               </li>
             ))}

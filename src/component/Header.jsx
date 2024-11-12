@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
+import DarkMode from "./DarkMode";
 
 export default function Header() {
   const [menuVisible, setMenuVisible] = useState(false);
-  const [darkTheme, setDarkTheme] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
   const toggleMenu = () => {
@@ -11,10 +11,6 @@ export default function Header() {
 
   const closeMenu = () => {
     setMenuVisible(false);
-  };
-
-  const toggleTheme = () => {
-    setDarkTheme((prevState) => !prevState);
   };
 
   useEffect(() => {
@@ -42,7 +38,7 @@ export default function Header() {
 
   return (
     <div
-      className="fixed top-0 left-0 z-50 backdrop-blur-md shadow-lg bg-opacity-50"
+      className="fixed top-0 left-0 z-50 backdrop-blur-md dark:backdrop-blur-xl shadow-lg bg-opacity-50"
       style={headerStyle}
     >
       <nav className="container relative h-14 flex justify-between items-center">
@@ -53,23 +49,11 @@ export default function Header() {
         <div className="flex-1"></div>
 
         <div className="flex items-center gap-5 left-0 top-0 ">
-          <i
-            className={`cursor-pointer ml-4 text-xl mr-4 ${
-              darkTheme ? "text-yellow-400" : "text-darkBrown"
-            }`}
-            onClick={toggleTheme}
-          >
-            {darkTheme ? (
-              <i className="ri-sun-line"></i>
-            ) : (
-              <i className="ri-moon-line"></i>
-            )}
-          </i>
-
           <div className="md:hidden" onClick={toggleMenu}>
-            <i className="ri-menu-2-line cursor-pointer text-xl"></i>
+            <i className="ri-menu-2-line cursor-pointer text-xl dark:text-white"></i>
           </div>
         </div>
+        <DarkMode />
 
         <div
           className={`${
@@ -82,7 +66,7 @@ export default function Header() {
                 <a
                   href="#home"
                   onClick={closeMenu}
-                  className="nav_link text-darkBrown hover:border-b-2 hover:border-darkBrown ease-in duration-200"
+                  className="nav_link text-darkBrown dark:text-white hover:border-b-2 hover:border-darkBrown dark:hover:border-darkerGold ease-in duration-200"
                 >
                   Home
                 </a>
@@ -91,7 +75,7 @@ export default function Header() {
                 <a
                   href="#about"
                   onClick={closeMenu}
-                  className="nav_link text-darkBrown hover:border-b-2 hover:border-darkBrown ease-in duration-200"
+                  className="nav_link text-darkBrown dark:text-white hover:border-b-2 hover:border-darkBrown dark:hover:border-darkerGold ease-in duration-200"
                 >
                   About
                 </a>
@@ -100,7 +84,7 @@ export default function Header() {
                 <a
                   href="#products"
                   onClick={closeMenu}
-                  className="nav_link text-darkBrown hover:border-b-2 hover:border-darkBrown ease-in duration-200"
+                  className="nav_link text-darkBrown dark:text-white hover:border-b-2 hover:border-darkBrown dark:hover:border-darkerGold ease-in duration-200"
                 >
                   Products
                 </a>
@@ -109,7 +93,7 @@ export default function Header() {
                 <a
                   href="#review"
                   onClick={closeMenu}
-                  className="nav_link text-darkBrown hover:border-b-2 hover:border-darkBrown ease-in duration-200"
+                  className="nav_link text-darkBrown dark:text-white hover:border-b-2 hover:border-darkBrown dark:hover:border-darkerGold ease-in duration-200"
                 >
                   Review
                 </a>
@@ -118,7 +102,7 @@ export default function Header() {
                 <a
                   href="#contact"
                   onClick={closeMenu}
-                  className="nav_link text-darkBrown hover:border-b-2 hover:border-darkBrown ease-in duration-200"
+                  className="nav_link text-darkBrown dark:text-white hover:border-b-2 hover:border-darkBrown dark:hover:border-darkerGold ease-in duration-200"
                 >
                   Contact
                 </a>
