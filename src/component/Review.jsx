@@ -70,7 +70,7 @@ export default function Review() {
                   </p>
                   <div className="flex items-center">
                     <img
-                      src="/images/female1.jpg"
+                      src="/images/female2.jpg"
                       alt="review"
                       className="w-12 h-12 rounded-full"
                     />
@@ -91,7 +91,7 @@ export default function Review() {
                   </p>
                   <div className="flex items-center">
                     <img
-                      src="/images/female1.jpg"
+                      src="/images/female4.jpg"
                       alt="review"
                       className="w-12 h-12 rounded-full"
                     />
@@ -113,7 +113,7 @@ export default function Review() {
                   </p>
                   <div className="flex items-center">
                     <img
-                      src="/images/female1.jpg"
+                      src="/images/female5.jpg"
                       alt="review"
                       className="w-12 h-12 rounded-full"
                     />
@@ -134,7 +134,7 @@ export default function Review() {
                   </p>
                   <div className="flex items-center">
                     <img
-                      src="/images/female1.jpg"
+                      src="/images/female8.jpg"
                       alt="review"
                       className="w-12 h-12 rounded-full"
                     />
