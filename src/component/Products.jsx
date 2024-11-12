@@ -262,10 +262,10 @@ export default function Products() {
           </h2>
           <div className="border-t-2 border-brown w-12 mx-auto mb-8"></div>
           <p className="text-lg mb-8 text-darkBrown dark:text-darkerGold">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit
-            doloribus eaque nisi debitis! Neque in debitis error nobis sequi
-            cupiditate impedit facere repellendus, nam explicabo odit numquam
-            praesentium sapiente soluta.
+            These best-sellers have been tried, tested, and loved by thousands.
+            Each product is carefully selected to deliver proven results, from
+            hydration to rejuvenation. Take a look and find your new skincare
+            essentials—your skin will thank you!
           </p>
 
           <div className=" mb-10">
