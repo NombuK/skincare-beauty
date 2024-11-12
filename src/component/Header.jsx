@@ -58,7 +58,7 @@ export default function Header() {
         <div
           className={`${
             menuVisible ? "block" : "hidden"
-          } fixed top-0 left-0 z-40 w-full py-14 bg-lightBrown dark:bg-black border-b border-darkBrown md:block md:static md:py-0 md:border-none md:w-auto md:ml-auto md:bg-transparent`}
+          } fixed top-0 left-0 z-40 w-full py-14 bg-lightBrown dark:bg-black dark:md:bg-transparent border-b border-darkBrown md:block md:static md:py-0 md:border-none md:w-auto md:ml-auto md:bg-transparent`}
         >
           <div className="relative w-full h-full">
             <ul className="flex flex-col w-full h-full text-lg text-center gap-5 md:flex-row">
