@@ -16,11 +16,12 @@ export default function Footer() {
                   Skin<span className="text-lightBrown">Care</span>
                 </a>
                 <p className="text-sm font-dmsans text-lightBrown">
-                  Welcome to Burger Place, where passion meets flavor. Our
-                  mission is to serve high-quality, delicious food that brings
-                  people together. We're dedicated to providing exceptional
-                  customer service, supporting local suppliers, and making every
-                  dining experience unforgettable.
+                  We are here to empower you to feel confident in your own skin.
+                  We believe that skincare is more than just a routine; it's a
+                  moment of self-love and self-care. With every product, we aim
+                  to nourish, rejuvenate, and reveal your skin’s natural beauty,
+                  helping you glow from the inside out. Because when you take
+                  care of yourself, you radiate with confidence—inside and out.
                 </p>
               </div>
             </li>
@@ -30,16 +31,28 @@ export default function Footer() {
                 <h3 className="text-2xl uppercase font-oswald text-darkerBrown dark:text-gold">
                   SUPPORT
                 </h3>
-                <a href="" className="text-sm hover:text-darkerBrown dark:hover:text-darkerGold">
+                <a
+                  href=""
+                  className="text-sm hover:text-darkerBrown dark:hover:text-darkerGold"
+                >
                   FAQs
                 </a>
-                <a href="" className="text-sm hover:text-darkerBrown dark:hover:text-darkerGold">
+                <a
+                  href=""
+                  className="text-sm hover:text-darkerBrown dark:hover:text-darkerGold"
+                >
                   Privacy Policy
                 </a>
-                <a href="" className="text-sm hover:text-darkerBrown dark:hover:text-darkerGold">
+                <a
+                  href=""
+                  className="text-sm hover:text-darkerBrown dark:hover:text-darkerGold"
+                >
                   Terms & Conditions
                 </a>
-                <a href="" className="text-sm hover:text-darkerBrown dark:hover:text-darkerGold">
+                <a
+                  href=""
+                  className="text-sm hover:text-darkerBrown dark:hover:text-darkerGold"
+                >
                   Contact
                 </a>
               </div>
