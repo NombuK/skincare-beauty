@@ -3,12 +3,12 @@ export default function Home() {
     <div id="home">
       <div className="bg-black h-screen flex relative">
         <img
-          src="public/images/combo4.jpg"
+          src="/images/combo4.jpg"
           alt="background white"
           className="flex-1 opacity-10 object-cover dark:hidden"
         />
         <img
-          src="public/images/combo10.jpg"
+          src="/images/combo10.jpg"
           alt="background black"
           className="flex-1 opacity-10 object-cover hidden dark:block"
         />
