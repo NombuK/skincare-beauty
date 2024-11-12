@@ -1,4 +1,5 @@
 import "animate.css";
+import Home from "./component/Home";
 import Header from "./component/Header";
 import About from "./component/About";
 import Products from "./component/Products";
@@ -11,6 +12,7 @@ function App() {
   return (
     <>
       <Header />
+      <Home />
       <About />
       <Products />
       <Review />

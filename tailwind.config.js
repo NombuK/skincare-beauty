@@ -17,7 +17,7 @@ export default {
       },
       backgroundImage: {
         whiteContact: "public/images/whitecontactBackground.jpg",
-        blackContact: "public/images/blackcontactBackground.jpg",
+        blackImage: "public/images/combo10.jpg",
         gold: "rgb(227, 192, 98)",
       },
       colors: {

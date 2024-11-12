@@ -63,9 +63,6 @@ html {
   transform: translateY(0);
 }
 
-/* globals.css or styles.css */
-
-/* Define your glowing gold background */
 @layer utilities {
   .glowingGold {
     background-color: #e2b346;

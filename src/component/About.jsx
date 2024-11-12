@@ -6,7 +6,7 @@ export default function About() {
     <AnimatedSection animationClass="animate__slideInFromLeft">
       <div
         id="about"
-        className="flex flex-col md:flex-row gap-0 mt-10 bg-lightBrown dark:bg-black h-full md:-mr-7"
+        className="flex flex-col md:flex-row gap-0 bg-lightBrown dark:bg-black h-full md:-mr-7"
       >
         <div className="w-full flex justify-center">
           <img

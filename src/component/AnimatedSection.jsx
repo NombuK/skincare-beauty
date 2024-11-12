@@ -8,22 +8,20 @@ const AnimatedSection = ({
   const sectionRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
 
-  // Intersection Observer to trigger animation when the section is in view
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            console.log(entry.isIntersecting);
             setIsVisible(true);
-            observer.unobserve(entry.target); // Stop observing once visible
+            observer.unobserve(entry.target);
           }
         });
       },
       {
         root: null,
         rootMargin: "0px",
-        threshold: 0.3, // Trigger when a percentage of the section is visible (default: 30%)
+        threshold: 0.3,
       }
     );
 
