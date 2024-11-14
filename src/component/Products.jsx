@@ -1,8 +1,10 @@
 import React, { useState, useEffect, useRef, useMemo } from "react";
+import AdditionAndSubtraction from "./Cart";
 
 export default function Products() {
   const [activeTab, setActiveTab] = useState("all");
   const productItemsRef = useRef({});
+  const [cart, setCart] = useState([]);
 
   const productItems = [
     {
@@ -211,6 +213,43 @@ export default function Products() {
       : productItems.filter((item) => item.category === activeTab);
   }, [activeTab]);
 
+  const addToCart = (productTitle) => {
+    const existingItem = cart.find((item) => item.title === productTitle);
+
+    if (existingItem) {
+      setCart(
+        cart.map((item) =>
+          item.title === productTitle
+            ? { ...item, quantity: item.quantity + 1 }
+            : item
+        )
+      );
+    } else {
+      setCart([...cart, { title: productTitle, quantity: 1 }]);
+    }
+  };
+
+  const removeFromCart = (productTitle) => {
+    const existingItem = cart.find((item) => item.title === productTitle);
+
+    if (existingItem && existingItem.quantity > 1) {
+      setCart(
+        cart.map((item) =>
+          item.title === productTitle
+            ? { ...item, quantity: item.quantity - 1 }
+            : item
+        )
+      );
+    } else {
+      setCart(cart.filter((item) => item.title !== productTitle));
+    }
+  };
+
+  const getCartQuantity = (productTitle) => {
+    const item = cart.find((item) => item.title === productTitle);
+    return item ? item.quantity : 0;
+  };
+
   const observer = useRef(null);
 
   useEffect(() => {
@@ -302,6 +341,13 @@ export default function Products() {
                     className="w-40 rounded-full hover:scale-110 transition duration-200"
                   />
                 </div>
+
+                <AdditionAndSubtraction
+                  item={item}
+                  addToCart={addToCart}
+                  removeFromCart={removeFromCart}
+                  getCartQuantity={getCartQuantity}
+                />
 
                 <div className="pt-5 text-center">
                   <div className="mb-2">
