@@ -1,12 +1,16 @@
 import React from "react";
 import { FaShoppingCart, FaPlus, FaMinus } from "react-icons/fa";
 
-const AdditionAndSubtraction = ({
+export function calculateTotalItems(cart) {
+  return cart.reduce((total, cartItem) => total + cartItem.quantity, 0);
+}
+
+function AdditionAndSubtraction({
   item,
   addToCart,
   removeFromCart,
   getCartQuantity,
-}) => {
+}) {
   return (
     <div className="product-actions flex justify-around dark:mt-7 gap-4 mt-4">
       <button
@@ -33,6 +37,6 @@ const AdditionAndSubtraction = ({
       </button>
     </div>
   );
-};
+}
 
 export default AdditionAndSubtraction;

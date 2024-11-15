@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import DarkMode from "./DarkMode";
+import CartIcon from "./CartIcon";
 
-export default function Header() {
+export default function Header({cart}) {
   const [menuVisible, setMenuVisible] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -54,6 +55,7 @@ export default function Header() {
           </div>
         </div>
         <DarkMode />
+        <CartIcon cart={cart} />
 
         <div
           className={`${
